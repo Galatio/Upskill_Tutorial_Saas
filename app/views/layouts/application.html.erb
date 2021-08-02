@@ -25,7 +25,8 @@
           </button>
           
             <!--<a href= "/" class="navbar-brand"><i class="fa fa-group"></i>DevMatch</a> CODE FOR TOOLBAR LOGO BASE, better way below-->
-            <%= link_to "/", class: "navbar-brand" do %>
+            <!-- rails route  to find link paths -->
+            <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group"></i>
             DevMatch
             <% end %>
@@ -35,7 +36,7 @@
           <ul class="nav navbar-nav navbar-right">
             
             <!-- <li><a href="/about"> <i class="fa fa-rebel"></i>About Us</a></li> better way below-->
-            <li><%= link_to "About Us", "/about" %></li>
+            <li><%= link_to "About Us", about_path %></li>
             
             
             
